@@ -4,6 +4,7 @@ from backend.pdf_parser import extract_text_from_pdf
 from backend.extractor import extract_lgs_requirements
 from backend.evidence import find_evidence
 from backend.review import init_db, save_review, get_reviews
+from backend.classifier import classify_requirement
 
 
 # ============================================================
@@ -222,7 +223,58 @@ if uploaded_file:
 
 
     # ========================================================
-    # STEP 7: HUMAN-IN-THE-LOOP REVIEW
+    # STEP 7: TRANSFORMER-BASED REQUIREMENT CLASSIFICATION
+    # ========================================================
+
+    st.divider()
+
+    st.subheader("AI Requirement Classification")
+
+    st.caption(
+        "Construction requirements classified using a "
+        "fine-tuned Hugging Face DistilBERT model."
+    )
+
+    test_sentences = []
+
+    for field, item in evidence.items():
+
+        if item and item.get("evidence"):
+
+            sentence = item["evidence"]
+
+            if sentence not in test_sentences:
+                test_sentences.append(sentence)
+
+
+    if test_sentences:
+
+        for sentence in test_sentences:
+
+            result = classify_requirement(sentence)
+
+            with st.expander(sentence):
+
+                st.write(
+                    f"**Predicted class:** "
+                    f"{result['label']}"
+                )
+
+                st.write(
+                    f"**Confidence:** "
+                    f"{result['confidence'] * 100:.1f}%"
+                )
+
+    else:
+
+        st.info(
+            "No requirement sentences were available "
+            "for Transformer classification."
+        )
+
+
+    # ========================================================
+    # STEP 8: HUMAN-IN-THE-LOOP REVIEW
     # ========================================================
 
     st.divider()
@@ -316,7 +368,7 @@ if uploaded_file:
 
 
     # ========================================================
-    # STEP 8: HUMAN REVIEW DASHBOARD
+    # STEP 9: HUMAN REVIEW DASHBOARD
     # ========================================================
 
     st.divider()
@@ -421,7 +473,7 @@ if uploaded_file:
 
 
     # ========================================================
-    # STEP 9: SOURCE DOCUMENT
+    # STEP 10: SOURCE DOCUMENT
     # ========================================================
 
     st.divider()

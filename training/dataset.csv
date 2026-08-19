@@ -1,0 +1,66 @@
+text,label
+"The wall must achieve 60 minutes fire resistance",FIRE_REQUIREMENT
+"Provide a minimum 90 minute fire rating",FIRE_REQUIREMENT
+"Required fire integrity is 120 minutes",FIRE_REQUIREMENT
+"Partition construction shall achieve 30 minutes fire resistance",FIRE_REQUIREMENT
+"Fire performance requirement is 60 minutes",FIRE_REQUIREMENT
+"Separating walls require 90 minute fire resistance",FIRE_REQUIREMENT
+"The system must maintain integrity for 60 minutes",FIRE_REQUIREMENT
+"The partition shall provide 120 minutes fire protection",FIRE_REQUIREMENT
+"Minimum fire resistance shall be 45 minutes",FIRE_REQUIREMENT
+"Fire rating of the wall shall be 60 minutes",FIRE_REQUIREMENT
+
+"Minimum airborne sound insulation shall be 45 dB",ACOUSTIC_REQUIREMENT
+"The wall must achieve 50 dB acoustic performance",ACOUSTIC_REQUIREMENT
+"Required sound reduction is 42 dB",ACOUSTIC_REQUIREMENT
+"Acoustic rating shall not be less than 48 dB",ACOUSTIC_REQUIREMENT
+"Partitions require 55 dB acoustic insulation",ACOUSTIC_REQUIREMENT
+"The minimum sound insulation requirement is 40 dB",ACOUSTIC_REQUIREMENT
+"Provide 52 dB acoustic separation",ACOUSTIC_REQUIREMENT
+"Wall construction shall achieve 45 dB",ACOUSTIC_REQUIREMENT
+"Acoustic performance target is 50 dB",ACOUSTIC_REQUIREMENT
+"Internal partitions must achieve 43 dB",ACOUSTIC_REQUIREMENT
+
+"Studs shall be installed at 600 mm centres",DIMENSION
+"Maximum wall height shall be 3.2 m",DIMENSION
+"Stud spacing shall not exceed 400 mm centres",DIMENSION
+"The wall height is 2.8 m",DIMENSION
+"Stud centres shall be 450 mm",DIMENSION
+"Maximum permitted height is 4.0 m",DIMENSION
+"Frame spacing shall be 600 mm centres",DIMENSION
+"The partition height shall not exceed 3.5 m",DIMENSION
+"Studs are set out at 300 mm centres",DIMENSION
+"Maximum wall height is 5.0 m",DIMENSION
+
+"The system shall use 0.7 mm steel studs",MATERIAL
+"Provide 0.9 mm galvanised steel sections",MATERIAL
+"Steel framing shall have a thickness of 1.2 mm",MATERIAL
+"Use galvanised light gauge steel framing",MATERIAL
+"Studs shall be manufactured from 0.8 mm steel",MATERIAL
+"Cold formed steel sections shall form the frame",MATERIAL
+"The frame requires 1.0 mm steel sections",MATERIAL
+"All studs shall be galvanised steel",MATERIAL
+"Use 0.6 mm steel tracks",MATERIAL
+"Framing members shall be cold formed steel",MATERIAL
+
+"Door openings require structural reinforcement",DESIGN_CONSTRAINT
+"Final board build-up shall be confirmed during detailed design",DESIGN_CONSTRAINT
+"Structural engineer approval is required before installation",DESIGN_CONSTRAINT
+"Deflection head details must be confirmed",DESIGN_CONSTRAINT
+"Opening reinforcement requires engineering review",DESIGN_CONSTRAINT
+"Final connection details shall be designed by the engineer",DESIGN_CONSTRAINT
+"Movement joints must be coordinated with the structural design",DESIGN_CONSTRAINT
+"Engineer approval is required for tall walls",DESIGN_CONSTRAINT
+"Wall junction details require design coordination",DESIGN_CONSTRAINT
+"Additional bracing may be required subject to design review",DESIGN_CONSTRAINT
+
+"The project consists of an office refurbishment",GENERAL
+"Installation shall comply with the project programme",GENERAL
+"Materials shall be delivered to the storage area",GENERAL
+"Contractor shall coordinate works with other trades",GENERAL
+"The works include internal partition construction",GENERAL
+"Site access shall be coordinated with the main contractor",GENERAL
+"Construction activities shall follow the agreed programme",GENERAL
+"Project documentation shall be maintained",GENERAL
+"Works are located on the second floor",GENERAL
+"Installation is scheduled for the next construction phase",GENERAL

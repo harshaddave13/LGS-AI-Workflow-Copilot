@@ -2,6 +2,7 @@
 __pycache__/
 *.pyc
 .env
-models/
 database/*.db
+models/
+training/results/
 .DS_Store
